@@ -2,13 +2,16 @@ package entidades;
 
 public class Conta {
 	
-	private String name;
-	private String email;
-	private int numConta;
-	private double saldoConta;
+	protected String name;
+	protected String email;
+	protected int numConta;
+	protected double saldoConta;
+	
+	public Conta() {
+		
+	}
 	
 	public Conta(String name, String email, int numConta, double valorInicial) {
-		
 		this.name = name;
 		this.email = email;
 		this.numConta = numConta;
@@ -54,7 +57,7 @@ public class Conta {
 	
 	
 	public String toString() {
-		return "Conta " + numConta + ", Nome: " + name + ", Email: "+ email + ", Saldo: $" + String.format("%.2f", saldoConta);
+		return " Conta " + numConta + "\n Nome: " + name + "\n Email: "+ email + "\n Saldo: $" + String.format("%.2f", saldoConta);
 	}
 
 }
