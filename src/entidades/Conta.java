@@ -2,10 +2,10 @@ package entidades;
 
 public class Conta {
 	
-	protected String name;
-	protected String email;
-	protected int numConta;
-	protected double saldoConta;
+	private String name;
+	private String email;
+	private int numConta;
+	private double saldoConta;
 	
 	public Conta() {
 		

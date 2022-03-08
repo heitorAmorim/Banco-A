@@ -15,8 +15,8 @@ public class Programa {
 		Conta conta;
 		
 		System.out.println("Bem Vindo ao Banco A!");
-		System.out.println("Para abrir uma conta digite as informaçôes abaixo:");
-		System.out.println("Tipo da conta 1 - conta padrão / 2 = conta salario");
+		System.out.println("Para abrir uma conta digite as informações abaixo:");
+		System.out.println("Tipo da conta 1 - conta padrão / 2 = conta salário");
 		int tipoConta = sc.nextInt();
 		
 		System.out.print("\n");
@@ -34,6 +34,7 @@ public class Programa {
 		double valorInicial = sc.nextDouble();
 		
 		if(tipoConta == 1) {
+			System.out.print("\n");
 			 conta = new Conta(name, email, numConta, valorInicial);
 			System.out.println(conta);
 		} else {

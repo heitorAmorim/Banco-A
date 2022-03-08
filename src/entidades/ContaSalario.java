@@ -22,7 +22,8 @@ public class ContaSalario extends Conta {
 	
 	@Override
 	public String toString() {
-		return "  Conta " + numConta + "\n  Nome: " + name + "\n  Email: "+ email + "\n  Saldo: $" + String.format("%.2f", saldoConta)+"\n  Limite de credito: "+String.format("%.2f", limiteCredito);
+		return "  Conta " + getNumConta() + "\n  Nome: " + getName() + "\n  Email: "+ getEmail() + "\n  Saldo: $" 
+				+ String.format("%.2f", getSaldoConta())+"\n  Limite de credito: "+String.format("%.2f", limiteCredito);
 	}
 	
 }
